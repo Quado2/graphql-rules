@@ -6,3 +6,5 @@
 3. Design your API around your business domain
 
 4. It's easier to add rules than to remove them
+
+5. group related fields together as a separate subject
