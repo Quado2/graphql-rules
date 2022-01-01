@@ -5,3 +5,4 @@
 
 3. Design your API around your business domain
 
+4. It's easier to add rules than to remove them
