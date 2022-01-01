@@ -14,3 +14,5 @@
 7. use object refereces instead of ID fields
 
 8. choose field names based on what makes sense and not on the implementation
+
+9. Use enums for fields which can only take a set of specific values
