@@ -22,4 +22,6 @@
 11. Write separate mutations for separate logical actions on a resource
 
 12. For a relationship mutation, always consider whether it would be useful to operate on multiple elements at once
-13 Prefix mutation names with the object they are mutating for easy alphabetical grouping
+13. Prefix mutation names with the object they are mutating for easy alphabetical grouping
+
+14. Structure mutations input to reduce duplication even if this requires relaxing requiredness constraints on certain fields
