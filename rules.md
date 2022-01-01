@@ -25,3 +25,4 @@
 13. Prefix mutation names with the object they are mutating for easy alphabetical grouping
 
 14. Structure mutations input to reduce duplication even if this requires relaxing requiredness constraints on certain fields
+15. Mutations should provide a user/business level error via a userErrors field on the mutation payload
