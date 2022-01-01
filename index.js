@@ -5,6 +5,21 @@ const typeDefs = gql`
 		cars: [Car!]!
 	}
 
+  type Mutation {
+    create(
+      name: String!
+      image: ImageInput!
+      description: String!
+      featureSet: GrouptFeatureFields
+    )
+    groupDelete(groupId: ID!) 
+    groupPublish(groupId: ID!)
+    groupUnpublish(groupId: ID!)
+    groupAddCars(groupId: ID!, carId: ID!)
+    grouptRemoveCars(groupId:ID!, carId:ID!)
+    update
+  }
+
 	type Car {
 		id: ID!
 		color: String!
@@ -14,6 +29,7 @@ const typeDefs = gql`
 	type Group {
 		id: ID!
 		featureSet: GroupFeatureSet
+    hasCar(id:ID!): Boolean
 		cars(skip: Int!, take: Int!): [Car!]!
 		name: Stri ng!
 		image: Image!

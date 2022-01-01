@@ -13,6 +13,13 @@
 
 7. use object refereces instead of ID fields
 
-8. choose field names based on what makes sense and not on the implementation
+8. choose field names based on what makes sense and not on the implement ation
 
 9. Use enums for fields which can only take a set of specific values
+
+10. The API should provide business logic and not just the data 
+
+11. Write separate mutations for separate logical actions on a resource
+
+12. For a relationship mutation, always consider whether it would be useful to operate on multiple elements at once
+13 Prefix mutation names with the object they are mutating for easy alphabetical grouping
