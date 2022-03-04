@@ -1,5 +1,12 @@
+
+//Importing Apollo server
+
 const { ApolloServer, gql } = require("apollo-server");
 
+
+
+
+//Type definitions
 const typeDefs = gql`
 	type Query {
 		cars: [Car!]!
